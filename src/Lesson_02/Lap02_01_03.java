@@ -56,9 +56,8 @@ public class Lap02_01_03 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please input your weight in kg:");
         float weight = scanner.nextFloat();
-        if (weight < 0) {
-            System.out.println("Please input your weight greater than 1");
-            System.out.print("Please input your weight in kg:");
+        if (weight < 1) {
+            System.out.print("Please input your weight greater than 1 in kg: ");
             weight = scanner.nextFloat();
         }
         return weight;
@@ -69,9 +68,8 @@ public class Lap02_01_03 {
         System.out.print("Please input your height in meters:");
         Scanner scanner = new Scanner(System.in);
         float height = scanner.nextFloat();
-        if (height < 0){
-            System.out.println("Please input your height greater than 1");
-            System.out.print("Please input your height in meters:");
+        if (height < 1){
+            System.out.print("Please input your height greater than 1 in meters:");
             height = scanner.nextFloat();
         }
         return height;
