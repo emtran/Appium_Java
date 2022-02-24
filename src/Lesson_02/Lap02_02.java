@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 public class Lap02_02 {
     public static void defineNumber(float number){
-        float numberResult = number/2;
+        float numberResult = number%2;
         if (numberResult == 0 ){
-            System.out.println("It is oven number.");
+            System.out.println("It is even number.");
         }else System.out.println("It is odd number.");
 
     }
